@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (homepagePublicationsContainer) {
         homepagePublicationsContainer.innerHTML = '';
-        publications.forEach((publication) => {
+        publications.slice(0, 1).forEach((publication) => {
           homepagePublicationsContainer.appendChild(renderPublicationCard(publication));
         });
       }

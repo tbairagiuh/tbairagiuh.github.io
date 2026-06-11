@@ -10,83 +10,26 @@
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./js/script.js" defer></script>
 </head>
-<body class="bg-slate-50 text-gray-800 antialiased">
-  <header class="fixed top-0 z-50 w-full border-b border-white/40 bg-white/80 backdrop-blur-md shadow-sm">
+<body class="bg-[#f7f3ec] text-gray-800 antialiased">
+  <header class="fixed top-0 z-50 w-full border-b border-amber-100 bg-[#fbf8f2]/90 backdrop-blur-md shadow-sm">
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
       <div class="flex flex-wrap items-center gap-3">
-        <a href="https://www.uh.edu/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-slate-200 bg-white px-2">
+        <a href="https://www.uh.edu/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-amber-100 bg-[#fbf8f2] px-2">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/University_of_Houston_Logo.svg/1280px-University_of_Houston_Logo.svg.png" alt="University of Houston logo" class="h-full w-full object-contain" />
         </a>
-        <a href="https://www.buet.ac.bd/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-slate-200 bg-white px-2">
+        <a href="https://www.buet.ac.bd/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-amber-100 bg-[#fbf8f2] px-2">
           <img src="https://www.buet.ac.bd/web/assets/img/BImages/logoBIRN.png" alt="BUET logo" class="h-full w-full object-contain" />
         </a>
-        <a href="https://ku.ac.bd/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-slate-200 bg-white px-2">
+        <a href="https://ku.ac.bd/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-amber-100 bg-[#fbf8f2] px-2">
           <img src="https://ku.ac.bd/frontend/images/logo.png" alt="Khulna University logo" class="h-full w-full object-contain" />
         </a>
       </div>
       <div class="hidden items-center gap-6 text-sm font-medium text-gray-600 md:flex">
         <a href="index.html" class="nav-link">Home</a>
-        <div class="group relative">
-          <a href="publications.html" class="nav-link">Publications</a>
-          <div class="invisible absolute left-0 top-full mt-3 w-72 rounded-2xl border border-slate-200 bg-white/95 p-3 shadow-xl opacity-0 transition group-hover:visible group-hover:opacity-100">
-            <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">Latest Publications</p>
-            <div id="scholar-dropdown-list" class="space-y-2 text-sm text-gray-700">
-              <div class="animate-pulse rounded-lg bg-slate-100 px-3 py-2 text-slate-500">Fetching latest publications from Google Scholar...</div>
-            </div>
-          </div>
-        </div>
-        <div class="group relative">
-          <a href="index.html#education" class="nav-link">Education</a>
-          <div class="invisible absolute left-0 top-full mt-3 w-96 rounded-2xl border border-slate-700 bg-slate-900/95 p-4 shadow-xl opacity-0 transition group-hover:visible group-hover:opacity-100">
-            <p class="mb-3 text-xs font-semibold uppercase tracking-wide text-slate-400">Education</p>
-            <div class="space-y-3 text-sm text-slate-100">
-              <div class="flex items-start gap-3 rounded-xl px-3 py-2 hover:bg-white/5">
-                <i class="fa-solid fa-user-graduate mt-1 w-4 text-slate-300"></i>
-                <div>
-                  <p class="font-semibold">PhD Candidate and Graduate Teaching Assistant at University of Houston</p>
-                  <p class="text-slate-400">Current</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl px-3 py-2 hover:bg-white/5">
-                <i class="fa-solid fa-graduation-cap mt-1 w-4 text-slate-300"></i>
-                <div>
-                  <p class="font-semibold">Studies Mathematics at University of Houston</p>
-                  <p class="text-slate-400">Graduate study</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl px-3 py-2 hover:bg-white/5">
-                <i class="fa-solid fa-building-columns mt-1 w-4 text-slate-300"></i>
-                <div>
-                  <p class="font-semibold">Studied Mathematics at BUET - Bangladesh University of Engineering and Technology</p>
-                  <p class="text-slate-400">2022-2023 | CGPA 4.00</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl px-3 py-2 hover:bg-white/5">
-                <i class="fa-solid fa-school mt-1 w-4 text-slate-300"></i>
-                <div>
-                  <p class="font-semibold">Studied B.Sc. in Mathematics at Khulna University</p>
-                  <p class="text-slate-400">2014-2018 | CGPA 3.93</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl px-3 py-2 hover:bg-white/5">
-                <i class="fa-solid fa-certificate mt-1 w-4 text-slate-300"></i>
-                <div>
-                  <p class="font-semibold">H.S.C. at Govt. Paikgasa College</p>
-                  <p class="text-slate-400">2013 | GPA 4.90</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl px-3 py-2 hover:bg-white/5">
-                <i class="fa-solid fa-certificate mt-1 w-4 text-slate-300"></i>
-                <div>
-                  <p class="font-semibold">S.S.C. at Channir Chalk L.C. High School</p>
-                  <p class="text-slate-400">2011 | GPA 5.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="education.html" class="nav-link">Education</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
-        <a href="#" class="nav-link">Teaching</a>
+        <a href="teaching-jobs.html" class="nav-link">Teaching and Jobs</a>
         <a href="awards.html" class="nav-link">Awards</a>
       </div>
     </nav>
@@ -95,8 +38,8 @@
   <main class="mx-auto max-w-7xl px-4 pt-24 pb-16 sm:px-6 lg:px-8 lg:pt-28">
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-4 lg:gap-12">
       <aside class="lg:sticky lg:top-24 lg:col-span-1 lg:self-start">
-        <div class="flex flex-col items-start gap-5 rounded-3xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200/70 backdrop-blur">
-          <img src="assets/pp.jpg" alt="Profile photo of TANMOY BAIRAGI" class="h-48 w-48 rounded-full border-4 border-slate-200 object-cover" />
+        <div class="flex flex-col items-start gap-5 rounded-3xl bg-[#fbf8f2]/85 p-6 shadow-sm ring-1 ring-amber-100/80 backdrop-blur">
+          <img src="assets/pp.jpg" alt="Profile photo of TANMOY BAIRAGI" class="h-48 w-48 rounded-full border-4 border-amber-100 object-cover" />
           <div>
             <h1 class="text-2xl font-bold text-gray-800">TANMOY BAIRAGI</h1>
             <p class="mt-1 text-sm text-gray-600">Graduate Student &amp; Teaching Assistant (TA) | College of Natural Sciences and Mathematics, Department of Mathematics</p>
@@ -131,40 +74,67 @@
       </aside>
 
       <section class="lg:col-span-3 space-y-10">
-        <div class="rounded-3xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200/70 backdrop-blur sm:p-8">
-          <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-            <div class="signature-placeholder text-right text-3xl font-medium text-slate-500 md:pt-3">
-              Signature
-            </div>
+        <section class="rounded-3xl bg-[#fbf8f2]/85 p-6 shadow-sm ring-1 ring-amber-100/80 backdrop-blur sm:p-8">
+          <div class="max-w-4xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Gallery</p>
+            <h2 class="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">Awards showcase</h2>
+            <p class="mt-4 text-base leading-7 text-gray-700">A card-based gallery highlighting the major honors and recognitions collected along the academic journey.</p>
           </div>
-        </div>
 
-        <section class="rounded-3xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200/70 backdrop-blur sm:p-8">
-          <h2 class="inline-block border-b-4 border-gray-800 pb-2 text-2xl font-bold text-gray-800">Gallery &amp; Visuals</h2>
-          <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <article class="overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg hover:opacity-90">
-              <img src="./assets/placeholder.jpg" alt="Presenting at IEEE Conference 2023" class="gallery-image h-56 w-full object-cover" data-gallery-image />
-              <div class="border-t border-gray-200 bg-gray-50 p-3 text-sm text-gray-700">Presenting at IEEE Conference 2023</div>
+          <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article class="overflow-hidden rounded-3xl border border-amber-100 bg-[#faf6ef] shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div class="flex h-40 items-center justify-center bg-gradient-to-br from-amber-100 via-amber-50 to-white text-5xl text-amber-700">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="p-5">
+                <span class="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-600">2019</span>
+                <h3 class="mt-3 text-xl font-bold text-gray-800">Prime Minister Award</h3>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Awarded the prestigious national Prime Minister Award in recognition of exceptional academic excellence, dedication, and top-tier scholarly achievements.</p>
+              </div>
             </article>
-            <article class="overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg hover:opacity-90">
-              <img src="./assets/placeholder.jpg" alt="Field work with the research team" class="gallery-image h-56 w-full object-cover" data-gallery-image />
-              <div class="border-t border-gray-200 bg-gray-50 p-3 text-sm text-gray-700">Field work with the research team</div>
+
+            <article class="overflow-hidden rounded-3xl border border-amber-100 bg-[#faf6ef] shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div class="flex h-40 items-center justify-center bg-gradient-to-br from-amber-100 via-amber-50 to-white text-5xl text-amber-700">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <div class="p-5">
+                <span class="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-600">2019</span>
+                <h3 class="mt-3 text-xl font-bold text-gray-800">President Award</h3>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Conferred the highly esteemed President Award for outstanding academic distinction and continuous commitment to educational excellence at the national level.</p>
+              </div>
             </article>
-            <article class="overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg hover:opacity-90">
-              <img src="./assets/placeholder.jpg" alt="Poster session at the annual symposium" class="gallery-image h-56 w-full object-cover" data-gallery-image />
-              <div class="border-t border-gray-200 bg-gray-50 p-3 text-sm text-gray-700">Poster session at the annual symposium</div>
+
+            <article class="overflow-hidden rounded-3xl border border-amber-100 bg-[#faf6ef] shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div class="flex h-40 items-center justify-center bg-gradient-to-br from-amber-100 via-amber-50 to-white text-5xl text-amber-700">
+                <i class="fa-solid fa-ribbon"></i>
+              </div>
+              <div class="p-5">
+                <span class="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-600">2018</span>
+                <h3 class="mt-3 text-xl font-bold text-gray-800">A.F. Mujibur Rahman Award for Excellence in Mathematics</h3>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Honored with this specialized award for demonstrating exceptional mathematical proficiency, advanced analytical problem-solving skills, and academic rigor.</p>
+              </div>
             </article>
-            <article class="overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg hover:opacity-90">
-              <img src="./assets/placeholder.jpg" alt="Lab demo of the project prototype" class="gallery-image h-56 w-full object-cover" data-gallery-image />
-              <div class="border-t border-gray-200 bg-gray-50 p-3 text-sm text-gray-700">Lab demo of the project prototype</div>
+
+            <article class="overflow-hidden rounded-3xl border border-amber-100 bg-[#faf6ef] shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div class="flex h-40 items-center justify-center bg-gradient-to-br from-amber-100 via-amber-50 to-white text-5xl text-amber-700">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="p-5">
+                <span class="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-600">2018</span>
+                <h3 class="mt-3 text-xl font-bold text-gray-800">Dean's Award (Gold Medal)</h3>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Received the Gold Medal from Khulna University, awarded by the Dean for securing the highest academic standing and demonstrating extraordinary merit within the faculty.</p>
+              </div>
             </article>
-            <article class="overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg hover:opacity-90">
-              <img src="./assets/placeholder.jpg" alt="Research group meeting notes and planning" class="gallery-image h-56 w-full object-cover" data-gallery-image />
-              <div class="border-t border-gray-200 bg-gray-50 p-3 text-sm text-gray-700">Research group meeting notes and planning</div>
-            </article>
-            <article class="overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg hover:opacity-90">
-              <img src="./assets/placeholder.jpg" alt="Conference travel and campus memories" class="gallery-image h-56 w-full object-cover" data-gallery-image />
-              <div class="border-t border-gray-200 bg-gray-50 p-3 text-sm text-gray-700">Conference travel and campus memories</div>
+
+            <article class="overflow-hidden rounded-3xl border border-amber-100 bg-[#faf6ef] shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2 xl:col-span-1">
+              <div class="flex h-40 items-center justify-center bg-gradient-to-br from-amber-100 via-amber-50 to-white text-5xl text-amber-700">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="p-5">
+                <span class="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-600">2016</span>
+                <h3 class="mt-3 text-xl font-bold text-gray-800">Bangladesh Mathematical Olympiad</h3>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Achieved 1st Rank regionally at Khulna University and secured the 4th Rank Nationally in this highly competitive and prestigious mathematical problem-solving competition.</p>
+              </div>
             </article>
           </div>
         </section>
