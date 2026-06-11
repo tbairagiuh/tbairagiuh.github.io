@@ -1,16 +1,60 @@
 [
   {
-    "title": "Predictive Modeling of Non-linear Dynamical Systems",
-    "authors": "Debbindu Bairagi, et al.",
-    "journal": "Journal of Computational Mathematics",
-    "year": "2025",
-    "link": "https://scholar.google.com/..."
+    "title": "Lump, interaction of lump and kink and solitonic solution of nonlinear evolution equation which describe incompressible viscoelastic Kelvin–Voigt fluid",
+    "authors": "MM Roshid, T Bairagi, MM Rahman",
+    "journal": "Partial Differential Equations in Applied Mathematics",
+    "year": "2022",
+    "volume": "5",
+    "pages": "100354",
+    "publisher": "Elsevier",
+    "citations": 49,
+    "link": "https://doi.org/10.1016/j.heliyon.2024.e28609"
   },
   {
-    "title": "Advanced Data Extraction Techniques for Secure Web Environments",
-    "authors": "Debbindu Bairagi",
-    "journal": "International Conference on Cybersecurity",
-    "year": "2024",
-    "link": "https://scholar.google.com/..."
+  "title": "Artificial neural network (ANN) analysis on thermophysical properties of magnetohydrodynamics flow with radiation in an arc-shaped enclosure with a rotating cylinder",
+  "authors": "T Bairagi, Md Jahid Hasan, MN Hudha, AK Azad, MM Rahman",
+  "journal": "Heliyon",
+  "year": "2024",
+  "volume": "10",
+  "issue": "7",
+  "publisher": "Elsevier",
+  "citations": 44,
+  "description": "This research examines the thermophysical features of the magnetic parameter (Ha) and time step (τ) in a lid-driven cavity using a water-based Al2O3 nanofluid and evaluates the efficacy of ANN models in predicting the average heat transfer rate. The Galerkin weighted residual approach is used to solve the governing equations, while the Levenberg-Marquardt backpropagation technique is employed to train the ANN model using sparse simulated data.",
+  "link": "https://doi.org/10.1016/j.heliyon.2024.e28609"
+  },
+  {
+  "title": "Heatline visualization in hydromagnetic natural convection flow inside a prismatic heat exchanger using nanofluid",
+  "authors": "Saiful Islam, Tanmoy Bairagi, Tarikul Islam, BMJ Rana, SK Reza-E-Rabbi, MM Rahman",
+  "journal": "International Journal of Thermofluids",
+  "year": "2022",
+  "volume": "16",
+  "pages": "100248",
+  "publisher": "Elsevier",
+  "citations": 39,
+  "description": "This study presents a numerical analysis of magnetohydrodynamic natural convection in a prismatic heat exchanger containing Cu nanoparticles dispersed in water. The heat exchanger consists of two uniform cylinders placed inside a prismatic cavity, with one heated and the other cooled. The finite element method based on the Galerkin weighted residual technique is used to solve the governing equations. The effects of Rayleigh number (Ra), Hartmann number (Ha), and nanoparticle volume fraction (ϕ) on fluid flow and heat transfer characteristics are investigated through graphical analysis.",
+  "link": "https://doi.org/10.1016/j.ijft.2022.1002488"
+  },
+  {
+  "title": "Artificial Neural Network analysis on the effect of mixed convection in triangular-shaped geometry using water-based Al2O3 nanofluid",
+  "authors": "MN Hudha, Md Jahid Hasan, T Bairagi, AK Azad, MM Rahman",
+  "journal": "PLOS ONE",
+  "year": "2024",
+  "volume": "19",
+  "issue": "9",
+  "pages": "e0304826",
+  "publisher": "Public Library of Science",
+  "citations": 14,
+  "description": "This study investigates fluid flow and heat transfer characteristics in a triangular-shaped cavity using water-based Al2O3 nanofluid through Artificial Neural Network (ANN) analysis of magnetohydrodynamic mixed convection. The finite element method is used to analyze the effects of Richardson number (Ri), Hartmann number (Ha), Reynolds number (Re), and nanoparticle volume fraction (ϕ). The Levenberg-Marquardt backpropagation algorithm is employed for ANN training. Results indicate that increasing nanoparticle concentration enhances heat transfer, while higher Hartmann numbers reduce the Nusselt number. The ANN model demonstrates excellent predictive accuracy for heat transfer performance.",
+  "link": "https://doi.org/10.1371/journal.pone.0304826"
+  },
+  {
+  "title": "Analysis of MHD mixed convection and Joule heating in a lid-driven cavity having a square block using Cu-water nanofluid",
+  "authors": "Md Rahman, Tanmoy Bairagi, Romana Sultana",
+  "journal": "Proceedings of the 13th International Conference on Marine Technology (MARTEC 2022)",
+  "year": "2023",
+  "publisher": "MARTEC Conference Proceedings",
+  "citations": 2,
+  "description": "This numerical study investigates the effects of magnetic fields and Joule heating on mixed convection flow and heat transfer in a lid-driven cavity containing a centrally positioned heat-conducting square block. The cavity is filled with electrically conducting Cu-water nanofluid. The Galerkin weighted residual finite element method and Newton-Raphson iterative algorithm are employed to solve the governing equations. The impacts of Richardson number, Hartmann number, Joule heating parameter, nanoparticle volume fraction, and block size on streamlines, isotherms, average Nusselt number, and average fluid temperature are analyzed. Results indicate that flow and thermal characteristics are strongly influenced by magnetic effects, Joule heating, nanoparticle concentration, and block dimensions.",
+  "link": "https://dx.doi.org/10.2139/ssrn.4445361"
   }
 ]

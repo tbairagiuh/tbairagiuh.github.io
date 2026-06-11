@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Academic Portfolio | Gallery</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/tbairagi-favicon.svg" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -11,14 +12,18 @@
 </head>
 <body class="bg-slate-50 text-gray-800 antialiased">
   <header class="fixed top-0 z-50 w-full border-b border-white/40 bg-white/80 backdrop-blur-md shadow-sm">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="index.html" class="flex items-center gap-3 text-gray-800">
-        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-bold text-white">AP</div>
-        <div>
-          <p class="text-sm font-semibold tracking-wide">Academic Portfolio</p>
-          <p class="text-xs text-gray-500">Research, teaching, and projects</p>
-        </div>
-      </a>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="https://www.uh.edu/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-slate-200 bg-white px-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/University_of_Houston_Logo.svg/1280px-University_of_Houston_Logo.svg.png" alt="University of Houston logo" class="h-full w-full object-contain" />
+        </a>
+        <a href="https://www.buet.ac.bd/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-slate-200 bg-white px-2">
+          <img src="https://www.buet.ac.bd/web/assets/img/BImages/logoBIRN.png" alt="BUET logo" class="h-full w-full object-contain" />
+        </a>
+        <a href="https://ku.ac.bd/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-slate-200 bg-white px-2">
+          <img src="https://ku.ac.bd/frontend/images/logo.png" alt="Khulna University logo" class="h-full w-full object-contain" />
+        </a>
+      </div>
       <div class="hidden items-center gap-6 text-sm font-medium text-gray-600 md:flex">
         <a href="index.html" class="nav-link">Home</a>
         <div class="group relative">
@@ -41,35 +46,33 @@
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-4 lg:gap-12">
       <aside class="lg:sticky lg:top-24 lg:col-span-1 lg:self-start">
         <div class="flex flex-col items-start gap-5 rounded-3xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200/70 backdrop-blur">
-          <div class="flex h-48 w-48 items-center justify-center rounded-full border-4 border-slate-200 bg-gradient-to-br from-slate-100 to-slate-200 text-sm font-semibold text-slate-500">
-            Profile Photo
-          </div>
+          <img src="assets/pp.jpg" alt="Profile photo of TANMOY BAIRAGI" class="h-48 w-48 rounded-full border-4 border-slate-200 object-cover" />
           <div>
-            <h1 class="text-2xl font-bold text-gray-800">Your Name</h1>
-            <p class="mt-1 text-sm text-gray-600">Graduate Researcher / Computational Scientist</p>
+            <h1 class="text-2xl font-bold text-gray-800">TANMOY BAIRAGI</h1>
+            <p class="mt-1 text-sm text-gray-600">Graduate Student &amp; Teaching Assistant (TA) | College of Natural Sciences and Mathematics, Department of Mathematics</p>
           </div>
           <div class="w-full space-y-3 text-sm text-gray-700">
-            <a href="#" class="flex items-center gap-3 transition hover:text-blue-600">
+            <a href="#contact" class="flex items-center gap-3 transition hover:text-blue-600">
               <i class="fa-solid fa-location-dot w-4 text-gray-500"></i>
-              <span>Location</span>
+              <span>Room 343, Philip Guthrie Hoffman Hall (PGH)</span>
             </a>
-            <a href="mailto:your.email@example.com" class="flex items-center gap-3 transition hover:text-blue-600">
+            <a href="mailto:tbairagi@cougarnet.uh.edu" class="flex items-center gap-3 transition hover:text-blue-600">
               <i class="fa-solid fa-envelope w-4 text-gray-500"></i>
-              <span>Email</span>
+              <span>tbairagi@cougarnet.uh.edu</span>
             </a>
-            <a href="#" class="flex items-center gap-3 transition hover:text-blue-600">
+            <a href="https://scholar.google.com/citations?user=J5XZzQMAAAAJ&hl=en" class="flex items-center gap-3 transition hover:text-blue-600">
               <i class="fa-solid fa-graduation-cap w-4 text-gray-500"></i>
               <span>Google Scholar</span>
             </a>
-            <a href="#" class="flex items-center gap-3 transition hover:text-blue-600">
+            <a href="https://orcid.org/0000-0003-1445-433X" class="flex items-center gap-3 transition hover:text-blue-600">
               <i class="fa-brands fa-orcid w-4 text-gray-500"></i>
               <span>ORCID</span>
             </a>
-            <a href="#" class="flex items-center gap-3 transition hover:text-blue-600">
+            <a href="https://github.com/tbairagiuh" class="flex items-center gap-3 transition hover:text-blue-600">
               <i class="fa-brands fa-github w-4 text-gray-500"></i>
               <span>GitHub</span>
             </a>
-            <a href="#" class="flex items-center gap-3 transition hover:text-blue-600">
+            <a href="https://www.linkedin.com/in/tanmoy-bairagi-289547172/" class="flex items-center gap-3 transition hover:text-blue-600">
               <i class="fa-brands fa-linkedin w-4 text-gray-500"></i>
               <span>LinkedIn</span>
             </a>
@@ -80,14 +83,6 @@
       <section class="lg:col-span-3 space-y-10">
         <div class="rounded-3xl bg-white/80 p-6 shadow-sm ring-1 ring-slate-200/70 backdrop-blur sm:p-8">
           <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-            <div class="flex items-center gap-4">
-              <div class="logo-placeholder flex h-20 w-36 items-center justify-center rounded-2xl border border-slate-200 text-xs font-semibold text-slate-500">
-                University Logo
-              </div>
-              <div class="logo-placeholder flex h-20 w-36 items-center justify-center rounded-2xl border border-slate-200 text-xs font-semibold text-slate-500">
-                University Logo
-              </div>
-            </div>
             <div class="signature-placeholder text-right text-3xl font-medium text-slate-500 md:pt-3">
               Signature
             </div>
