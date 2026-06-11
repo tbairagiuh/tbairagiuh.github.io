@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.logo-placeholder {
+  background-image: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(255, 255, 255, 0.95));
+}
+
+.signature-placeholder {
+  font-family: cursive;
+  letter-spacing: 0.04em;
+}
+
+#dynamic-text::after {
+  content: '|';
+  margin-left: 2px;
+  animation: typewriter-blink 1s step-end infinite;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 180ms ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes typewriter-blink {
+  50% {
+    opacity: 0;
+  }
+}
