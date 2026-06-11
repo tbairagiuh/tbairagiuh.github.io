@@ -52,9 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function renderPublications() {
     const dropdownList = document.getElementById('scholar-dropdown-list');
+    const homepagePublicationsContainer = document.getElementById('homepage-publications-container');
     const publicationsContainer = document.getElementById('publications-container');
 
-    if (!dropdownList && !publicationsContainer) {
+    if (!dropdownList && !homepagePublicationsContainer && !publicationsContainer) {
       return;
     }
 
@@ -66,6 +67,42 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const publications = await response.json();
+
+      const renderPublicationCard = (publication) => {
+        const card = document.createElement('article');
+        card.className = 'rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm';
+
+        const title = document.createElement('h3');
+        title.className = 'text-lg font-bold text-gray-800';
+
+        const titleLink = document.createElement('a');
+        titleLink.href = publication.link;
+        titleLink.target = '_blank';
+        titleLink.rel = 'noopener noreferrer';
+        titleLink.textContent = publication.title;
+
+        title.appendChild(titleLink);
+
+        const authors = document.createElement('p');
+        authors.className = 'mt-2 text-sm text-gray-600';
+        authors.textContent = publication.authors;
+
+        const citationMeta = document.createElement('p');
+        citationMeta.className = 'mt-1 text-sm italic text-gray-500';
+        citationMeta.textContent = [publication.journal, publication.year].filter(Boolean).join(', ');
+
+        card.appendChild(title);
+        card.appendChild(authors);
+        if (publication.description) {
+          const description = document.createElement('p');
+          description.className = 'mt-3 text-sm leading-6 text-gray-700';
+          description.textContent = publication.description;
+          card.appendChild(description);
+        }
+        card.appendChild(citationMeta);
+
+        return card;
+      };
 
       if (dropdownList) {
         dropdownList.innerHTML = '';
@@ -81,36 +118,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
+      if (homepagePublicationsContainer) {
+        homepagePublicationsContainer.innerHTML = '';
+        publications.forEach((publication) => {
+          homepagePublicationsContainer.appendChild(renderPublicationCard(publication));
+        });
+      }
+
       if (publicationsContainer) {
         publicationsContainer.innerHTML = '';
 
         publications.forEach((publication) => {
-          const card = document.createElement('article');
-          card.className = 'border-l-4 border-blue-600 pl-4 mb-6';
-
-          const title = document.createElement('h3');
-          title.className = 'text-lg font-bold text-gray-800';
-
-          const titleLink = document.createElement('a');
-          titleLink.href = publication.link;
-          titleLink.target = '_blank';
-          titleLink.rel = 'noopener noreferrer';
-          titleLink.textContent = publication.title;
-
-          title.appendChild(titleLink);
-
-          const authors = document.createElement('p');
-          authors.className = 'text-sm text-gray-600';
-          authors.textContent = publication.authors;
-
-          const citationMeta = document.createElement('p');
-          citationMeta.className = 'text-sm italic text-gray-500';
-          citationMeta.textContent = `${publication.journal}, ${publication.year}`;
-
-          card.appendChild(title);
-          card.appendChild(authors);
-          card.appendChild(citationMeta);
-          publicationsContainer.appendChild(card);
+          publicationsContainer.appendChild(renderPublicationCard(publication));
         });
       }
     } catch (error) {
