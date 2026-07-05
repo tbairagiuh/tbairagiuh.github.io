@@ -147,6 +147,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderPublications();
 
+  const mobileMenuButton = document.querySelector('[data-mobile-menu-button]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+  if (mobileMenuButton && mobileMenu) {
+    const mobileMenuIcon = mobileMenuButton.querySelector('[data-mobile-menu-icon]');
+
+    const toggleMobileMenu = () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+
+      if (mobileMenuIcon) {
+        mobileMenuIcon.classList.toggle('fa-bars', isOpen);
+        mobileMenuIcon.classList.toggle('fa-xmark', !isOpen);
+      }
+    };
+
+    mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (!mobileMenu.classList.contains('hidden')) {
+          toggleMobileMenu();
+        }
+      });
+    });
+  }
+
   if (!galleryImages.length) {
     return;
   }

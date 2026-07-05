@@ -11,9 +11,9 @@
   <script src="./js/script.js" defer></script>
 </head>
 <body class="bg-[#f7f3ec] text-gray-800 antialiased">
-  <header class="fixed top-0 z-50 w-full border-b border-amber-100 bg-[#fbf8f2]/90 backdrop-blur-md shadow-sm">
+  <header class="fixed top-0 z-50 w-full border-b border-amber-100 bg-[#fbf8f2]/90 shadow-sm backdrop-blur-md">
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-      <div class="flex flex-wrap items-center gap-3">
+      <div class="flex min-w-0 flex-wrap items-center gap-3">
         <a href="https://www.uh.edu/" target="_blank" rel="noopener noreferrer" class="flex h-10 w-16 items-center justify-center rounded-xl border border-amber-100 bg-[#fbf8f2] px-2">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/University_of_Houston_Logo.svg/1280px-University_of_Houston_Logo.svg.png" alt="University of Houston logo" class="h-full w-full object-contain" />
         </a>
@@ -32,7 +32,22 @@
         <a href="teaching-jobs.html" class="nav-link">Teaching and Jobs</a>
         <a href="awards.html" class="nav-link">Awards</a>
       </div>
+      <button type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-amber-200 bg-white text-gray-700 shadow-sm transition hover:bg-amber-50 md:hidden" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-button>
+        <i class="fa-solid fa-bars text-lg" data-mobile-menu-icon></i>
+      </button>
     </nav>
+    <div id="mobile-menu" class="hidden border-t border-amber-100 bg-[#fbf8f2]/95 md:hidden" data-mobile-menu>
+      <div class="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-1 text-sm font-medium text-gray-700">
+          <a href="index.html" class="rounded-lg px-3 py-2 transition hover:bg-amber-50 hover:text-blue-600">Home</a>
+          <a href="publications.html" class="rounded-lg px-3 py-2 transition hover:bg-amber-50 hover:text-blue-600">Publications</a>
+          <a href="education.html" class="rounded-lg px-3 py-2 transition hover:bg-amber-50 hover:text-blue-600">Education</a>
+          <a href="gallery.html" class="rounded-lg px-3 py-2 transition hover:bg-amber-50 hover:text-blue-600">Gallery</a>
+          <a href="teaching-jobs.html" class="rounded-lg px-3 py-2 transition hover:bg-amber-50 hover:text-blue-600">Teaching and Jobs</a>
+          <a href="awards.html" class="rounded-lg px-3 py-2 transition hover:bg-amber-50 hover:text-blue-600">Awards</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main id="home" class="mx-auto max-w-7xl px-4 pt-24 pb-16 sm:px-6 lg:px-8 lg:pt-28">
